@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" href="./img/businessman.png"/>
     <link rel="stylesheet" href="./style/style.css">
     <title>Stevan Živadinović</title>
@@ -100,162 +103,26 @@
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
       <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Pravoslavne ikone</h1>
-            <h2>ReactJS project</h2>
-            <p></p>
-          </div>
-     
-            <a class="project-img" style="cursor:pointer" href="https://pravoslavne-ikone-new.web.app/" target="blank"><img src="./img/pravoslavne-ikone.png" alt="img"></a>
-      
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Zanimljiva geografija</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://zgeografija-c4387.web.app/#" target="blank"><img src="./img/zanimljiva-geografija.png" alt="img"></a>
-
-      
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Japanese watch</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://japanese-watch.web.app/" target="blank"><img src="./img/japanese-watch.png" alt="img"></a>
-
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Todo app</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          
-          <a class="project-img" style="cursor:pointer" href="https://todo-app-5d45e.web.app/" target="blank"><img src="./img/todo-app.png" alt="img"></a>
-
         
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Rent a car</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://rent-a-car-ddd10.web.app/" target="blank"><img src="./img/rent-a-car.png" alt="img"></a>
-
-     
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Chat app</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://real-time-chat-app-42d7c.web.app/" target="blank"><img src="./img/chat-app.png" alt="img"></a>
-
+        <script id="entry-template" type="text/x-handlebars-template">
+          {{#each list}}
+          <div class="project-item">
+            <div class="project-info">
+              <h1>{{nameProject}}</h1>
+              <h2>{{technologies}}</h2>
+              <p></p>
+            </div>
+       
+              <a class="project-img" style="cursor:pointer" href={{address}} target="blank"><img src={{image}} alt="img"></a>
         
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Slack-chat-app</h1>
-            <h2>React project</h2>
-            <p></p>
           </div>
-          <a class="project-img" style="cursor:pointer" href="https://slack-chat-app-ba4de.web.app
-          " target="blank"><img src="./img/slack-chat-app.png" alt="img"></a>
+          {{/each}}
 
-
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Strawberry website</h1>
-            <h2>HTML & SASS project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://sass-strowberry-website.web.app/
-          " target="blank"><img src="./img/strawberry sass website.png" alt="img"></a>
-
-         
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>CryptoTrack App</h1>
-            <h2>JavaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://criptotrackapp.web.app"
-          target="blank"><img src="./img/CryptoTrackApp.png" alt="img"></a>
-
-         
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Natours website</h1>
-            <h2>HTML & SASS project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://natours-e9cff.web.app/"
-          target="blank"><img src="./img/Natours.png" alt="img"></a>
-
-         
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Asymmetry website</h1>
-            <h2>HTML & SASS project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://asymmetry-website.web.app/"
-          target="blank"><img src="./img/Asymmetry.png" alt="img"></a>
-
-         
-        </div>
-
-        <!--  -->
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Prime hiring</h1>
-            <h2>HTML & SASS & javaScript project</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://prime-hiring-3b462.web.app/"
-          target="blank"><img src="./img/primeHiring.png" alt="img"></a>
-  
-        </div>
-        <!--  -->
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website Graxpo</h1>
-            <h2>HTML & SASS & javaScript & masonry plugin</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://graxpo-6c872.web.app/"
-          target="blank"><img src="./img/Graxpo.png" alt="img"></a>
-  
-        </div>
-        <!--  -->
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website Birra</h1>
-            <h2>HTML & SASS & javaScript & Bootstrap</h2>
-            <p></p>
-          </div>
-          <a class="project-img" style="cursor:pointer" href="https://brewery-website-34605.web.app/"
-          target="blank"><img src="./img/Birra.png" alt="img"></a>
-  
-        </div>
-        <!--  -->
+          </script>
+        <!-- 
+       
+   
+    
 
         <div class="project-item">
           <div class="project-info">
@@ -266,8 +133,8 @@
           <a class="project-img" style="cursor:pointer" href="https://countries-presentation-a-ca18f.web.app/"
           target="blank"><img src="./img/CountriesPresentation.png" alt="img"></a>
   
-        </div>
-        <!--  -->
+        </div> -->
+    
 
 
 
@@ -355,7 +222,7 @@
     </div>
   </section>
   <!-- End Footer -->
-
+<script src="./script/handleBars.js"></script>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 
