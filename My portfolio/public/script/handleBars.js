@@ -6,7 +6,7 @@ var context = {
       nameProject: "Huddle",
       technologies: "ReactJS & Styled components",
       address: "https://huddle-79c33.web.app/",
-      image: "./img/huddle.png",
+      image: "./img/Huddle.png",
     },
     {
       nameProject: "Netflix clone",
