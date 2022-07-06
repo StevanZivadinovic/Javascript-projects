@@ -3,6 +3,12 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Huddle",
+      technologies: "ReactJS & Styled components",
+      address: "https://huddle-79c33.web.app/",
+      image: "./img/huddle.png",
+    },
+    {
       nameProject: "Netflix clone",
       technologies: "HTML & Tailwind CSS & React & Typescript",
       address: "https://netflix-clone-website-3bc7f.web.app/",
