@@ -19,6 +19,10 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+.certificates{
+	min-height: 50%;
+	flex-direction: column;
+}
 img {
 	height: 100%;
 	width: 100%;
