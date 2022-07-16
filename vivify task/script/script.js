@@ -259,7 +259,7 @@ window.addEventListener("keydown", (event) => {
                     
                     console.log(`${monster} je pobedio u duelu sa ${hero}`)
                 }else if(monsterHealth<=0){
-                    console.log(`${hero} je pobedio u duelu sa ${moster}`)
+                    console.log(`${hero} je pobedio u duelu sa ${monster}`)
                 }
                   
               }else{
