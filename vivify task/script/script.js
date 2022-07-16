@@ -236,12 +236,13 @@ window.addEventListener("keydown", (event) => {
 
               }
               if(heroHealth<=0 || monsterHealth<=0){
-                console.log('borba se zavrsila!');
-
-                if(heroHealth<=0){
-                    console.log()
+                  console.log('borba se zavrsila!');
+                  
+                  if(heroHealth<=0){
+                    
+                    console.log(`${monster} je pobedio u duelu sa ${hero}`)
                 }else if(monsterHealth<=0){
-                    console.log()
+                    console.log(`${hero} je pobedio u duelu sa ${moster}`)
                 }
                   clearInterval(borba);
               }else{
