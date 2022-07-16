@@ -236,7 +236,7 @@ window.addEventListener("keydown", (event) => {
 
               }
               if(heroHealth<=0 || monsterHealth<=0){
-                  console.log('borba se zavrsila!');
+                clearInterval(borba);
                   
                   if(heroHealth<=0){
                     
@@ -244,7 +244,7 @@ window.addEventListener("keydown", (event) => {
                 }else if(monsterHealth<=0){
                     console.log(`${hero} je pobedio u duelu sa ${moster}`)
                 }
-                  clearInterval(borba);
+                  
               }else{
                 console.log(heroHealth, monsterHealth)
                   console.log('borba se nastavlja!')
