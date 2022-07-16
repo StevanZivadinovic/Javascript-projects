@@ -86,6 +86,21 @@ class Zmaj{
             }
         }
     }
+    typeOfWepon(){
+        if(this.fire){
+            if(Math.random()>0.5){
+                return 'hit'
+            }else{
+                return 'fire'
+            }
+        }else if(this.bite){
+            if(Math.random()>0.5){
+                return 'hit';
+            }else{
+                return 'bite';
+            }
+        }
+    }
 }
 
 class Pauk{
@@ -105,6 +120,7 @@ Carobnjak.prototype.changeWeapon = macevalac.changeWeapon;
 Carobnjak.prototype.getWeapon = macevalac.getWeapon;
 Carobnjak.prototype.throWeapon = macevalac.throWeapon;
 Pauk.prototype.typeOfAttack = zmaj.typeOfAttack;
+Pauk.prototype.typeOfWepon = zmaj.typeOfWepon;
 
 
 
@@ -221,7 +237,7 @@ window.addEventListener("keydown", (event) => {
 
               
               let borba = setInterval(() => {
-                  console.log(heroHealth, monsterHealth)
+                  console.log(monster)
                   
                   
                   if(random<50){
@@ -230,7 +246,8 @@ window.addEventListener("keydown", (event) => {
                
 
               }else if(random>50){
-                console.log(`${monster} je napao ${hero} pomocu ${monster.typeOfAttack}`)
+                
+                console.log(`${monster} je napao ${hero} pomocu ${monster.typeOfWepon}`)
                 heroHealth=heroHealth-monsterAtt;
                
 
