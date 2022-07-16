@@ -111,4 +111,4 @@ var context = {
   ],
 };
 document.querySelector(".all-projects").innerHTML = template(context);
-console.log("haj");
+
