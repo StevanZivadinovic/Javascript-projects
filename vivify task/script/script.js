@@ -233,4 +233,8 @@ window.addEventListener("keydown", (e) => {
 });
 
 
-console.log('haj');
+console.log('haj haj');
+
+
+
+
