@@ -44,3 +44,4 @@ function sugarHigh(candies, threshold) {
 }
 
 console.log(sugarHigh(a, 20));
+console.log('9')
