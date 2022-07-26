@@ -44,4 +44,42 @@ function sugarHigh(candies, threshold) {
 }
 
 console.log(sugarHigh(a, 20));
-console.log('9')
+
+
+class Man{
+  constructor(){
+    this.liquid=0
+  }
+  drinking(){
+
+  }
+}
+
+class Bottle{
+  constructor(){
+    this.liquid=10;
+  }
+
+ 
+}
+
+class Connector{
+  sumLiquid(first, second){
+    first.liquid+=second.liquid;
+    second.liquid=0;
+  }
+}
+class View{
+  setView(man, bottle){
+    console.log(man.liquid, bottle.liquid)
+  }
+}
+
+
+let man = new Man();
+let bottle = new Bottle();
+let connector=new Connector();
+let view = new View()
+
+connector.sumLiquid(man, bottle);
+view.setView(man, bottle);
