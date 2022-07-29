@@ -1,102 +1,22 @@
 
+import Carobnjak from "./Carobnjak.js";
+import Macevalac from "./Macevalac.js";
+import Pauk from './Pauk.js';
+import Zmaj from './Zmaj.js';
 let dropedWeapon = [];
 
-class Macevalac {
-  constructor(ranac, health) {
-    (this.ranac = ranac),
-      (this.health = health),
-      (this.defaultWeapon = ranac[0]),
-      (this.swordDemage = 10),
-      (this.spearDemage = 15);
-  }
 
-  changeWeapon(params) {
-    if (this.ranac.length == 0) {
-      throw Error("There is no weapon in the bag!");
-    } else {
-      if (this.defaultWeapon == this.ranac[0] && this.ranac[1]) {
-        this.defaultWeapon = this.ranac[1];
-      } else if (this.defaultWeapon == this.ranac[1]) {
-        this.defaultWeapon = this.ranac[0];
-      }
-    }
-  }
 
-  getWeapon() {
-    if (dropedWeapon.length > 0 && this.ranac.length <= 1) {
-      this.defaultWeapon = dropedWeapon[0];
-      this.ranac.push(dropedWeapon[0]);
-      dropedWeapon.splice(0, 1);
-    } else {
-      throw Error("You can't have more than two weapons!");
-    }
-  }
 
-  throWeapon() {
-    if (this.ranac.length > 0) {
-      let a = this.ranac.splice(this.ranac.indexOf(this.defaultWeapon), 1);
-      dropedWeapon.push(this.defaultWeapon);
-    } else {
-      throw Error("There is no weapon!");
-    }
-  }
-}
 
-class Carobnjak {
-  constructor(ranac, health) {
-    (this.ranac = ranac),
-      (this.health = health),
-      (this.defaultWeapon = ranac[0]),
-      (this.magicDemage = 20);
-  }
-}
 
-class Zmaj {
-  constructor() {
-    (this.health = 200), (this.hit = 5), (this.fire = 20);
-  }
 
-  typeOfAttack() {
-    if (this.fire) {
-      if (Math.random() > 0.5) {
-        return this.hit;
-      } else {
-        return this.fire;
-      }
-    } else if (this.bite) {
-      if (Math.random() > 0.5) {
-        return this.hit;
-      } else {
-        return this.bite;
-      }
-    }
-  }
-  typeOfWepon() {
-    if (this.fire) {
-      if (Math.random() > 0.5) {
-        return "hit";
-      } else {
-        return "fire";
-      }
-    } else if (this.bite) {
-      if (Math.random() > 0.5) {
-        return "hit";
-      } else {
-        return "bite";
-      }
-    }
-  }
-}
 
-class Pauk {
-  constructor() {
-    (this.health = 50), (this.hit = 5), (this.bite = 8);
-  }
-}
+
 
 let macevalac = new Macevalac(["mac", "koplje"], 100);
 let carobnjak = new Carobnjak(["carolija"], 150);
-let zmaj = new Zmaj();
+let zmaj = new Zmaj(200,5);
 let pauk = new Pauk();
 
 Carobnjak.prototype.changeWeapon = macevalac.changeWeapon;
