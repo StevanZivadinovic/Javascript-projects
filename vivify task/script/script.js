@@ -152,8 +152,28 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+function _function_to_invoke() {
 
-console.log('haj1');
+ setTimeout(() => {
+   return console.log(3)
+ }, 5);
+}
+
+(function() {
+  console.log(1);
+  setTimeout(() => {
+    console.log(2);
+  }, 10);
+  _function_to_invoke();
+  setTimeout(() => {
+    console.log(4);
+  }, 100);
+  setTimeout(function() {
+    console.log(5);
+  
+  },0);
+  console.log(6)
+})()
 
 
 
