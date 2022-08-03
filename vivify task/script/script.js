@@ -152,10 +152,10 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-function _function_to_invoke() {
+function _function_to_invoke(callback) {
 
- setTimeout(() => {
-   return console.log(3)
+ return setTimeout(() => {
+  callback
  }, 5);
 }
 
@@ -164,7 +164,7 @@ function _function_to_invoke() {
   setTimeout(() => {
     console.log(2);
   }, 10);
-  _function_to_invoke();
+  _function_to_invoke(console.log(3));
   setTimeout(() => {
     console.log(4);
   }, 100);
