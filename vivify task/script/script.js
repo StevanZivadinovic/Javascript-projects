@@ -174,6 +174,7 @@ function _function_to_invoke(callback) {
   },0);
   console.log(6)
 })()
+console.log('haj')
 
 
 
