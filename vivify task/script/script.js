@@ -154,27 +154,31 @@ window.addEventListener("keydown", (e) => {
 
 function _function_to_invoke(callback) {
 
- return setTimeout(() => {
-  callback
- }, 5);
+
+  return Promise.resolve(3)
 }
+
 
 (function() {
   console.log(1);
   setTimeout(() => {
     console.log(2);
   }, 10);
-  _function_to_invoke(console.log(3));
+
+  Promise.resolve().then(()=> console.log(3));
+
   setTimeout(() => {
     console.log(4);
   }, 100);
   setTimeout(function() {
     console.log(5);
   
-  },0);
+  },5);
   console.log(6)
 })()
-console.log('haj')
+
+// Promise.resolve().then(()=> console.log(3));
+
 
 
 
