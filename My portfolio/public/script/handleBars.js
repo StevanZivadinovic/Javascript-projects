@@ -3,6 +3,12 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Tax calculator",
+      technologies: "ReactJS & Tailwind",
+      address: "https://salestrakker-app.firebaseapp.com/",
+      image: "./img/Tax_calculator.png",
+    },
+    {
       nameProject: "Huddle",
       technologies: "ReactJS & Styled components",
       address: "https://huddle-79c33.web.app/",
