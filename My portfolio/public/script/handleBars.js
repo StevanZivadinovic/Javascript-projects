@@ -3,6 +3,12 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Next.js website",
+      technologies: "NextJS & Tailwind",
+      address: "https://react-js-and-vue-js.vercel.app/",
+      image: "./img/Next.jsWebsite.png",
+    },
+    {
       nameProject: "Tax calculator",
       technologies: "ReactJS & Tailwind",
       address: "https://salestrakker-app.firebaseapp.com/",
