@@ -3,6 +3,12 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Express.js website",
+      technologies: "NodeJS & Express.js",
+      address: "https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/node_simple_blog",
+      image: "./img/bloge_node_image.png",
+    },
+    {
       nameProject: "Next.js website",
       technologies: "NextJS & Tailwind",
       address: "https://react-js-and-vue-js.vercel.app/",
