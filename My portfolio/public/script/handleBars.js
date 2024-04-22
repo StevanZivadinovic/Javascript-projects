@@ -10,32 +10,6 @@ var context = {
       image: "./img/map_marker_app.png",
     },
     {
-      nameProject: "Express.js website",
-      technologies: "NodeJS & Express.js",
-      address: "https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/node_simple_blog",
-      code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/node_simple_blog",
-      image: "./img/bloge_node_image.png",
-    },
-    {
-      nameProject: "Next.js website",
-      technologies: "NextJS & Tailwind",
-      address: "https://react-js-and-vue-js.vercel.app/",
-      image: "./img/Next.jsWebsite.png",
-    },
-    {
-      nameProject: "Tax calculator",
-      technologies: "ReactJS & Tailwind",
-      address: "https://salestrakker-app.firebaseapp.com/",
-      code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/Salestrakker",
-      image: "./img/Tax_calculator.png",
-    },
-    {
-      nameProject: "Huddle",
-      technologies: "ReactJS & Styled components",
-      address: "https://huddle-79c33.web.app/",
-      image: "./img/Huddle.png",
-    },
-    {
       nameProject: "Netflix clone",
       technologies: "HTML & Tailwind CSS & React & Typescript",
       address: "https://netflix-clone-website-3bc7f.web.app/",
@@ -64,12 +38,39 @@ var context = {
       image: "./img/CountriesPresentation.png",
     },
     {
+      nameProject: "Tax calculator",
+      technologies: "ReactJS & Tailwind",
+      address: "https://salestrakker-app.firebaseapp.com/",
+      code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/Salestrakker",
+      image: "./img/Tax_calculator.png",
+    },
+    {
       nameProject: "Pravoslavne ikone",
       technologies: "ReactJS project",
       address: "https://pravoslavne-ikone-new.web.app/",
       code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/pravoslavne-ikone",
       image: "./img/pravoslavne-ikone.png",
     },
+    {
+      nameProject: "Express.js website",
+      technologies: "NodeJS & Express.js",
+      address: "https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/node_simple_blog",
+      code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/node_simple_blog",
+      image: "./img/bloge_node_image.png",
+    },
+    {
+      nameProject: "Next.js website",
+      technologies: "NextJS & Tailwind",
+      address: "https://react-js-and-vue-js.vercel.app/",
+      image: "./img/Next.jsWebsite.png",
+    },
+    {
+      nameProject: "Huddle",
+      technologies: "ReactJS & Styled components",
+      address: "https://huddle-79c33.web.app/",
+      image: "./img/Huddle.png",
+    },
+    
     {
       nameProject: "Asymmetry website",
       technologies: "HTML & SASS project",
