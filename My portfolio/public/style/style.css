@@ -383,6 +383,13 @@ p {
 	font-weight: 500;
 	margin-top: 10px;
 }
+#projects .project-info a {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+	color: white;
+	text-decoration: underline;
+}
 #projects .project-info p {
 	color: white;
 }
