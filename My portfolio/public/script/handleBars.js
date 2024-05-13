@@ -3,6 +3,13 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Admin-control-panel app",
+      technologies: "Next.js 14 & mongoDB & Tailwind CSS",
+      address:"https://admin-dashboard-dxne14es1-stevans-projects-ee9d9ffe.vercel.app/",
+      code: "https://github.com/StevanZivadinovic/admin_dashboard_app",
+      image: "./img/admin_dashboard.png",
+    },
+    {
       nameProject: "Travel-Map app",
       technologies: "NodeJS & React.js",
       address:"https://mappin-fe.onrender.com/",
