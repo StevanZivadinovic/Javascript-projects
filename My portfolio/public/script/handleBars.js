@@ -3,6 +3,21 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Movebaby app",
+      technologies: "React native & Expo Go & nativewind",
+      // address:"https://shindiri-task.vercel.app/",
+      code: "https://github.com/StevanZivadinovic/teki_gallery_app",
+      image: "./img/movebaby.png",
+    },
+    {
+      nameProject: "Rick & Morty website",
+      technologies: "React.js & Tailwind CSS & React query & Axios",
+      address:"https://shindiri-task.vercel.app/",
+      code: "https://github.com/StevanZivadinovic/shindiri_task",
+      image: "./img/rick_morty.png",
+    },
+   
+    {
       nameProject: "Admin-control-panel app",
       technologies: "Next.js 14 & mongoDB & Tailwind CSS",
       address:"https://admin-dashboard-dxne14es1-stevans-projects-ee9d9ffe.vercel.app/",
@@ -57,6 +72,13 @@ var context = {
       address: "https://pravoslavne-ikone-new.web.app/",
       code:"https://github.com/StevanZivadinovic/React.js-and-Vue.js/tree/main/pravoslavne-ikone",
       image: "./img/pravoslavne-ikone.png",
+    },
+    {
+      nameProject: "Travel website",
+      technologies: "JS && CSS && Bootstrap",
+      address:"https://travel-website-js.vercel.app/",
+      code: "https://github.com/StevanZivadinovic/travel_website_js/tree/main",
+      image: "./img/travel_turist_js.png",
     },
     {
       nameProject: "Express.js website",
