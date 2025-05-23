@@ -198,12 +198,15 @@
                   <p></p>
                 </div>
 
-                <a
-                  class="project-img"
-                  style="cursor:pointer"
-                  href={{address}}
-                  target="blank"
-                ><img src={{image}} alt="img" /></a>
+                        {{#if address}}
+          <a class="project-img" href="{{address}}" target="_blank">
+            <img src="{{image}}" alt="img" />
+          </a>
+        {{else}}
+          <a class="project-img disabled-link" href="javascript:void(0)">
+            <img src="{{image}}" alt="img" />
+          </a>
+        {{/if}}
 
               </div>
             {{/each}}

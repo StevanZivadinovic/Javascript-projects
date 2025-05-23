@@ -551,6 +551,9 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+.disabled-link{
+	cursor: not-allowed;
+}
 /* End Footer */
 
 /* Keyframes */
