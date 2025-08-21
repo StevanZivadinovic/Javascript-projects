@@ -5,7 +5,7 @@ var context = {
     {
       nameProject: "Movebaby app",
       technologies: "React native & Expo Go & nativewind",
-      // address:"https://shindiri-task.vercel.app/",
+      address:"https://expo.dev/accounts/stevan994/projects/Movbeby/builds/d37c3d8c-91b3-49f0-a337-4b7f6f243596",
       code: "https://github.com/StevanZivadinovic/teki_gallery_app",
       image: "./img/movebaby.png",
     },
