@@ -3,6 +3,13 @@ var template = Handlebars.compile(source);
 var context = {
   list: [
     {
+      nameProject: "Bookwise app",
+      technologies: "Next.js 15 & Tailwind CSS & TypeScript & NeonDB & Upstash",
+      address:"https://library-borrow-app.vercel.app",
+      code: "https://github.com/StevanZivadinovic/library-borrow-app",
+      image: "./img/bookwise.png",
+    },
+    {
       nameProject: "Movebaby app",
       technologies: "React native & Expo Go & nativewind",
       address:"https://expo.dev/accounts/stevan994/projects/Movbeby/builds/d37c3d8c-91b3-49f0-a337-4b7f6f243596",
