@@ -7,7 +7,7 @@ var context = {
       technologies: "Next.js 15 & Tailwind CSS & TypeScript & NeonDB & Upstash",
       address:"https://library-borrow-app.vercel.app",
       code: "https://github.com/StevanZivadinovic/library-borrow-app",
-      image: "./img/bookwise.png",
+      image: "./img/Bookwise.png",
     },
     {
       nameProject: "Movebaby app",
